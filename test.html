@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>百年水圳牽繫城南深溝</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #004d40;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .site-name {
+      font-size: 20px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-item > a {
+      color: white;
+      text-decoration: none;
+      padding: 8px;
+      display: block;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #00695c;
+      min-width: 200px;
+      z-index: 999;
+    }
+
+    .dropdown a {
+      color: white;
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .dropdown a:hover {
+      background-color: #004d40;
+    }
+
+    .nav-item:hover .dropdown {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="your-logo.png" alt="Logo" class="logo">
+      <div class="site-name">以百年水圳牽繫城南深溝：城市鄉村共生共農</div>
+    </div>
+
+    <div class="nav-links">
+      <div class="nav-item"><a href="#">最新公告</a></div>
+
+      <div class="nav-item">
+        <a href="#">關於本計畫</a>
+        <div class="dropdown">
+          <a href="#">緣起</a>
+          <a href="#">計畫成員</a>
+          <a href="#">願景</a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="#">實踐場域</a>
+        <div class="dropdown">
+          <a href="#">台北城南</a>
+          <a href="#">宜蘭深溝村</a>
+        </div>
+      </div>
+
+      <div class="nav-item"><a href="#">USR擴散</a></div>
+
+      <div class="nav-item">
+        <a href="#">課程</a>
+        <div class="dropdown">
+          <a href="#">食農與環境探索</a>
+          <a href="#">USR 永續發展導論</a>
+          <a href="#">永續經營與管理：從土地倫理到在地實踐</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</body>
+</html>
